@@ -2,7 +2,7 @@ const { gql } = require('apollo-server-express');
 
 const typeDefs = gql`
     type Query {
-        food(cuisine: ID, name: string): [Food]
+        food(cuisine: ID, name: String): [Food]
         cuisine: [Cuisine]
     }
 
